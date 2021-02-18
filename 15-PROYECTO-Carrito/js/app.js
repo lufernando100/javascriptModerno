@@ -2,7 +2,7 @@
 const carrito = document.querySelector('#carrito');
 const listaCursos = document.querySelector('#lista-cursos');
 const contenedorCarrito = document.querySelector('#lista-carrito tbody');
-const vaciarCarritoBtn = document.querySelector('#vaciar-carrito'); 
+const vaciarCarritoBtns = document.querySelector('#vaciar-carrito'); 
 let articulosCarrito = [];
 
 // Listeners
@@ -68,7 +68,7 @@ function leerDatosCurso(curso) {
      carritoHTML();
 }
 
-// Elimina el curso del carrito en el DOM
+// Elimina el curso del carrito en el DOM -test lucho
 function eliminarCurso(e) {
      e.preventDefault();
      if(e.target.classList.contains('borrar-curso') ) {
